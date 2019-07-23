@@ -80,9 +80,6 @@ NSString* const QiShareCurrentIdentifier = @"QiShareCurrentIdentifier";
         // ASAuthorizationRequest：对于不同种类授权请求的基类
         NSArray <ASAuthorizationRequest *>* requests = [mArr copy];
         
-        if (authAppleIDRequest) {
-            requests = @[authAppleIDRequest];
-        }
         // A controller that manages authorization requests created by a provider.
         // 由ASAuthorizationAppleIDProvider创建的授权请求 管理授权请求的控制器
         // Creates a controller from a collection of authorization requests.
